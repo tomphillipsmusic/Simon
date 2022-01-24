@@ -19,6 +19,9 @@ class SimonGame: ObservableObject {
     
     @Published var selectedIndex = 0
     
+    @Published var turnOn = false
+    @Published var isPlayingSequence = false
+    
     init(numberOfStepsInSequence: Int = 1) {
         sequence = [ButtonType]()
         
@@ -48,4 +51,27 @@ class SimonGame: ObservableObject {
         return text
     }
     
+    func performSequence() {
+        if selectedIndex == sequence.count {
+            isPlayingSequence = false
+            selectedIndex = 0
+            turnOn = false
+            return
+        }
+        
+        let buttonIndex = buttons.firstIndex(where: {$0.buttonType == sequence[selectedIndex]})
+        
+        if let buttonIndex = buttonIndex {
+            buttons[buttonIndex].isHighlighted.toggle()
+            
+            if turnOn {
+                if selectedIndex < buttons.count {
+                    selectedIndex += 1
+                }
+            }
+            
+            turnOn.toggle()
+        }
+        
+    }
 }
