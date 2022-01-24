@@ -8,17 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		3EC76DF5279DD91B00982257 /* SimonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76DF4279DD91B00982257 /* SimonApp.swift */; };
-		3EC76DF7279DD91B00982257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76DF6279DD91B00982257 /* ContentView.swift */; };
+		3EC76DF7279DD91B00982257 /* SimonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76DF6279DD91B00982257 /* SimonButton.swift */; };
 		3EC76DF9279DD91C00982257 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC76DF8279DD91C00982257 /* Assets.xcassets */; };
 		3EC76DFC279DD91C00982257 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EC76DFB279DD91C00982257 /* Preview Assets.xcassets */; };
+		3EC76E03279E31F200982257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E02279E31F200982257 /* ContentView.swift */; };
+		3EC76E05279E3C5800982257 /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E04279E3C5800982257 /* SimonGame.swift */; };
+		3EC76E07279E3C8C00982257 /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E06279E3C8C00982257 /* ButtonModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3EC76DF1279DD91B00982257 /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC76DF4279DD91B00982257 /* SimonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonApp.swift; sourceTree = "<group>"; };
-		3EC76DF6279DD91B00982257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3EC76DF6279DD91B00982257 /* SimonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonButton.swift; sourceTree = "<group>"; };
 		3EC76DF8279DD91C00982257 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3EC76DFB279DD91C00982257 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3EC76E02279E31F200982257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3EC76E04279E3C5800982257 /* SimonGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
+		3EC76E06279E3C8C00982257 /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,10 @@
 			isa = PBXGroup;
 			children = (
 				3EC76DF4279DD91B00982257 /* SimonApp.swift */,
-				3EC76DF6279DD91B00982257 /* ContentView.swift */,
+				3EC76E04279E3C5800982257 /* SimonGame.swift */,
+				3EC76E02279E31F200982257 /* ContentView.swift */,
+				3EC76E06279E3C8C00982257 /* ButtonModel.swift */,
+				3EC76DF6279DD91B00982257 /* SimonButton.swift */,
 				3EC76DF8279DD91C00982257 /* Assets.xcassets */,
 				3EC76DFA279DD91C00982257 /* Preview Content */,
 			);
@@ -137,7 +146,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EC76DF7279DD91B00982257 /* ContentView.swift in Sources */,
+				3EC76DF7279DD91B00982257 /* SimonButton.swift in Sources */,
+				3EC76E03279E31F200982257 /* ContentView.swift in Sources */,
+				3EC76E07279E3C8C00982257 /* ButtonModel.swift in Sources */,
+				3EC76E05279E3C5800982257 /* SimonGame.swift in Sources */,
 				3EC76DF5279DD91B00982257 /* SimonApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
