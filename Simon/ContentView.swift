@@ -13,28 +13,37 @@ struct ContentView: View {
     let timer = Timer.publish(every: 0.75, on: .main, in: .common).autoconnect()
     
     var body: some View {
-        VStack {
-            Text("Score \(game.score)")
-            Text(game.sequenceText)
-            Text(game.guessString)
-            Button("Play Sequence") {
-                game.isPlayingSequence = true
+        ZStack {
+            VStack {
+                Text("Score \(game.score)")
+                //            Text(game.sequenceText)
+                //            Text(game.guessString)
+                
+                
+                HStack {
+                    SimonButton(model: $game.buttons[0], guessAction: game.guess)
+                    SimonButton(model: $game.buttons[1], guessAction: game.guess)
+                }
+                
+                HStack {
+                    SimonButton(model: $game.buttons[2], guessAction: game.guess)
+                    SimonButton(model: $game.buttons[3], guessAction: game.guess)
+                }
             }
-            HStack {
-                SimonButton(model: $game.buttons[0], guessAction: game.guess)
-                SimonButton(model: $game.buttons[1], guessAction: game.guess)
-            }
-            
-            HStack {
-                SimonButton(model: $game.buttons[2], guessAction: game.guess)
-                SimonButton(model: $game.buttons[3], guessAction: game.guess)
-            }
-        }
             .onReceive(timer) { _ in
                 if game.isPlayingSequence {
                     game.performSequence()
                 }
             }
+            if !game.isGameActive {
+                Button("Begin Game") {
+                    game.isGameActive = true
+                    game.isPlayingSequence = true
+                }
+                
+            }
+        }
+        
     }
 }
 
