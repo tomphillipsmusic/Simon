@@ -8,10 +8,11 @@ import SwiftUI
 
 struct SimonButton: View {
     @Binding var model: ButtonModel
+    var guessAction: (ButtonModel) -> Void
     
     var body: some View {
         Button(action: {
-            model.isHighlighted.toggle()
+            guessAction(model)
         }) {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)

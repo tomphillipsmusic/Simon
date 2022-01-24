@@ -16,11 +16,11 @@ class SimonGame: ObservableObject {
     ]
     
     @Published var sequence: [ButtonType]
-    
     @Published var selectedIndex = 0
-    
     @Published var turnOn = false
     @Published var isPlayingSequence = false
+    @Published var playerGuess = [ButtonType]()
+    @Published var score = 0
     
     init(numberOfStepsInSequence: Int = 1) {
         sequence = [ButtonType]()
@@ -51,6 +51,16 @@ class SimonGame: ObservableObject {
         return text
     }
     
+    var guessString: String {
+        var text = ""
+        
+        for guess in playerGuess {
+            text.append(guess.rawValue)
+        }
+        
+        return text
+    }
+    
     func performSequence() {
         if selectedIndex == sequence.count {
             isPlayingSequence = false
@@ -65,7 +75,7 @@ class SimonGame: ObservableObject {
             buttons[buttonIndex].isHighlighted.toggle()
             
             if turnOn {
-                if selectedIndex < buttons.count {
+                if selectedIndex < sequence.count {
                     selectedIndex += 1
                 }
             }
@@ -73,5 +83,39 @@ class SimonGame: ObservableObject {
             turnOn.toggle()
         }
         
+    }
+    
+    func guess(selection: ButtonModel) {
+        
+        if !isPlayingSequence {
+            
+            playerGuess.append(selection.buttonType)
+            
+            if playerGuess[selectedIndex] != sequence[selectedIndex] {
+                playerGuess = []
+                selectedIndex = 0
+                score = 0
+                return
+            }
+            
+            if playerGuess == sequence {
+                if let newStep = ButtonType.allCases.randomElement() {
+                    score += sequence.count
+                    playerGuess = []
+                    sequence.append(newStep)
+                    selectedIndex = 0
+                    isPlayingSequence = true
+                    performSequence()
+                }
+                
+                
+            } else if playerGuess.count == sequence.count {
+                playerGuess = []
+                selectedIndex = 0
+                score = 0
+            } else {
+                selectedIndex += 1
+            }
+        }
     }
 }

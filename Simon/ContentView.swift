@@ -14,18 +14,20 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
+            Text("Score \(game.score)")
             Text(game.sequenceText)
+            Text(game.guessString)
             Button("Play Sequence") {
                 game.isPlayingSequence = true
             }
             HStack {
-                SimonButton(model: $game.buttons[0])
-                SimonButton(model: $game.buttons[1])
+                SimonButton(model: $game.buttons[0], guessAction: game.guess)
+                SimonButton(model: $game.buttons[1], guessAction: game.guess)
             }
             
             HStack {
-                SimonButton(model: $game.buttons[2])
-                SimonButton(model: $game.buttons[3])
+                SimonButton(model: $game.buttons[2], guessAction: game.guess)
+                SimonButton(model: $game.buttons[3], guessAction: game.guess)
             }
         }
             .onReceive(timer) { _ in
@@ -35,10 +37,6 @@ struct ContentView: View {
             }
     }
 }
-
-
-
-
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
