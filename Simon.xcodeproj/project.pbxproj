@@ -58,8 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				3EC76DF4279DD91B00982257 /* SimonApp.swift */,
-				3EC76E04279E3C5800982257 /* SimonGame.swift */,
 				3EC76E02279E31F200982257 /* ContentView.swift */,
+				3EC76E04279E3C5800982257 /* SimonGame.swift */,
 				3EC76E06279E3C8C00982257 /* ButtonModel.swift */,
 				3EC76DF6279DD91B00982257 /* SimonButton.swift */,
 				3EC76DF8279DD91C00982257 /* Assets.xcassets */,

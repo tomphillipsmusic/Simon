@@ -16,6 +16,8 @@ struct ContentView: View {
         ZStack {
             VStack {
                 Text("Score \(game.score)")
+                
+                // Uncomment only if debugging
                 //            Text(game.sequenceText)
                 //            Text(game.guessString)
                 
@@ -40,6 +42,14 @@ struct ContentView: View {
                     game.isGameActive = true
                     game.isPlayingSequence = true
                 }
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .frame(width: 200, height: 200)
+                        .foregroundColor(.primary)
+                        .opacity(0.8)
+                        .shadow(radius: 10)
+                        
+                )
                 
             }
         }

@@ -22,7 +22,7 @@ class SimonGame: ObservableObject {
     @Published var playerGuess = [ButtonType]()
     @Published var score = 0
     @Published var isGameActive = false
-    
+
     init(numberOfStepsInSequence: Int = 1) {
         sequence = [ButtonType]()
         

@@ -17,12 +17,17 @@ struct SimonButton: View {
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(model.color)
-                Text(model.isHighlighted ? "*" : "")
-                    .foregroundColor(.primary)
-                    .font(.largeTitle)
+                    .shadow(radius: 10)
+                    .brightness(model.isHighlighted ? 0.3 : 0)
             }
             
         }
         .padding(20)
+    }
+}
+
+struct SimonButton_Previews: PreviewProvider {
+    static var previews: some View {
+        SimonButton(model: .constant(ButtonModel(buttonType: .green)), guessAction: SimonGame().guess)
     }
 }
