@@ -24,12 +24,16 @@ struct ContentView: View {
                 
                 HStack {
                     SimonButton(model: $game.buttons[0], guessAction: game.guess)
+                        .disabled(game.isPlayingSequence || !game.isGameActive)
                     SimonButton(model: $game.buttons[1], guessAction: game.guess)
+                        .disabled(game.isPlayingSequence || !game.isGameActive)
                 }
                 
                 HStack {
                     SimonButton(model: $game.buttons[2], guessAction: game.guess)
+                        .disabled(game.isPlayingSequence || !game.isGameActive)
                     SimonButton(model: $game.buttons[3], guessAction: game.guess)
+                        .disabled(game.isPlayingSequence || !game.isGameActive)
                 }
             }
             .onReceive(timer) { _ in

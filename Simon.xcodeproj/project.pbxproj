@@ -14,7 +14,61 @@
 		3EC76E03279E31F200982257 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E02279E31F200982257 /* ContentView.swift */; };
 		3EC76E05279E3C5800982257 /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E04279E3C5800982257 /* SimonGame.swift */; };
 		3EC76E07279E3C8C00982257 /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E06279E3C8C00982257 /* ButtonModel.swift */; };
+		3EE255CC27A70EBC00CF587A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE255CB27A70EBC00CF587A /* Assets.xcassets */; };
+		3EE255D227A70EBC00CF587A /* SimonWatch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3EE255D127A70EBC00CF587A /* SimonWatch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3EE255D727A70EBC00CF587A /* WatchContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE255D627A70EBC00CF587A /* WatchContentView.swift */; };
+		3EE255D927A70EBC00CF587A /* SimonApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE255D827A70EBC00CF587A /* SimonApp.swift */; };
+		3EE255DB27A70EBC00CF587A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE255DA27A70EBC00CF587A /* ComplicationController.swift */; };
+		3EE255DD27A70EBD00CF587A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE255DC27A70EBD00CF587A /* Assets.xcassets */; };
+		3EE255E027A70EBD00CF587A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EE255DF27A70EBD00CF587A /* Preview Assets.xcassets */; };
+		3EE255E427A70EBD00CF587A /* SimonWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 3EE255C927A70EBB00CF587A /* SimonWatch.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3EE255ED27A70EFE00CF587A /* SimonGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E04279E3C5800982257 /* SimonGame.swift */; };
+		3EE255EE27A70EFE00CF587A /* ButtonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E06279E3C8C00982257 /* ButtonModel.swift */; };
+		3EE255EF27A70EFE00CF587A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC76E02279E31F200982257 /* ContentView.swift */; };
+		3EE255F227A7103B00CF587A /* SimonButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE255F127A7103B00CF587A /* SimonButton.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EE255D327A70EBC00CF587A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EC76DE9279DD91B00982257 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE255D027A70EBC00CF587A;
+			remoteInfo = "SimonWatch WatchKit Extension";
+		};
+		3EE255E227A70EBD00CF587A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EC76DE9279DD91B00982257 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EE255C827A70EBB00CF587A;
+			remoteInfo = SimonWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3EE255E527A70EBD00CF587A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				3EE255E427A70EBD00CF587A /* SimonWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE255E827A70EBD00CF587A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3EE255D227A70EBC00CF587A /* SimonWatch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3EC76DF1279DD91B00982257 /* Simon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Simon.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -25,10 +79,27 @@
 		3EC76E02279E31F200982257 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3EC76E04279E3C5800982257 /* SimonGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonGame.swift; sourceTree = "<group>"; };
 		3EC76E06279E3C8C00982257 /* ButtonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModel.swift; sourceTree = "<group>"; };
+		3EE255C927A70EBB00CF587A /* SimonWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimonWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE255CB27A70EBC00CF587A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE255D127A70EBC00CF587A /* SimonWatch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimonWatch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EE255D627A70EBC00CF587A /* WatchContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchContentView.swift; sourceTree = "<group>"; };
+		3EE255D827A70EBC00CF587A /* SimonApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonApp.swift; sourceTree = "<group>"; };
+		3EE255DA27A70EBC00CF587A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		3EE255DC27A70EBD00CF587A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3EE255DF27A70EBD00CF587A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3EE255E127A70EBD00CF587A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EE255F127A7103B00CF587A /* SimonButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3EC76DEE279DD91B00982257 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE255CE27A70EBC00CF587A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				3EC76DF3279DD91B00982257 /* Simon */,
+				3EE255CA27A70EBB00CF587A /* SimonWatch */,
+				3EE255D527A70EBC00CF587A /* SimonWatch WatchKit Extension */,
 				3EC76DF2279DD91B00982257 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +123,8 @@
 			isa = PBXGroup;
 			children = (
 				3EC76DF1279DD91B00982257 /* Simon.app */,
+				3EE255C927A70EBB00CF587A /* SimonWatch.app */,
+				3EE255D127A70EBC00CF587A /* SimonWatch WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,6 +151,36 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		3EE255CA27A70EBB00CF587A /* SimonWatch */ = {
+			isa = PBXGroup;
+			children = (
+				3EE255CB27A70EBC00CF587A /* Assets.xcassets */,
+			);
+			path = SimonWatch;
+			sourceTree = "<group>";
+		};
+		3EE255D527A70EBC00CF587A /* SimonWatch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				3EE255D627A70EBC00CF587A /* WatchContentView.swift */,
+				3EE255D827A70EBC00CF587A /* SimonApp.swift */,
+				3EE255F127A7103B00CF587A /* SimonButton.swift */,
+				3EE255DA27A70EBC00CF587A /* ComplicationController.swift */,
+				3EE255DC27A70EBD00CF587A /* Assets.xcassets */,
+				3EE255E127A70EBD00CF587A /* Info.plist */,
+				3EE255DE27A70EBD00CF587A /* Preview Content */,
+			);
+			path = "SimonWatch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		3EE255DE27A70EBD00CF587A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3EE255DF27A70EBD00CF587A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,15 +191,51 @@
 				3EC76DED279DD91B00982257 /* Sources */,
 				3EC76DEE279DD91B00982257 /* Frameworks */,
 				3EC76DEF279DD91B00982257 /* Resources */,
+				3EE255E527A70EBD00CF587A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				3EE255E327A70EBD00CF587A /* PBXTargetDependency */,
 			);
 			name = Simon;
 			productName = Simon;
 			productReference = 3EC76DF1279DD91B00982257 /* Simon.app */;
 			productType = "com.apple.product-type.application";
+		};
+		3EE255C827A70EBB00CF587A /* SimonWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE255EC27A70EBD00CF587A /* Build configuration list for PBXNativeTarget "SimonWatch" */;
+			buildPhases = (
+				3EE255C727A70EBB00CF587A /* Resources */,
+				3EE255E827A70EBD00CF587A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EE255D427A70EBC00CF587A /* PBXTargetDependency */,
+			);
+			name = SimonWatch;
+			productName = SimonWatch;
+			productReference = 3EE255C927A70EBB00CF587A /* SimonWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		3EE255D027A70EBC00CF587A /* SimonWatch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EE255EB27A70EBD00CF587A /* Build configuration list for PBXNativeTarget "SimonWatch WatchKit Extension" */;
+			buildPhases = (
+				3EE255CD27A70EBC00CF587A /* Sources */,
+				3EE255CE27A70EBC00CF587A /* Frameworks */,
+				3EE255CF27A70EBC00CF587A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimonWatch WatchKit Extension";
+			productName = "SimonWatch WatchKit Extension";
+			productReference = 3EE255D127A70EBC00CF587A /* SimonWatch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -107,6 +248,12 @@
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					3EC76DF0279DD91B00982257 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3EE255C827A70EBB00CF587A = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					3EE255D027A70EBC00CF587A = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -125,6 +272,8 @@
 			projectRoot = "";
 			targets = (
 				3EC76DF0279DD91B00982257 /* Simon */,
+				3EE255C827A70EBB00CF587A /* SimonWatch */,
+				3EE255D027A70EBC00CF587A /* SimonWatch WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -136,6 +285,23 @@
 			files = (
 				3EC76DFC279DD91C00982257 /* Preview Assets.xcassets in Resources */,
 				3EC76DF9279DD91C00982257 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE255C727A70EBB00CF587A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE255CC27A70EBC00CF587A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EE255CF27A70EBC00CF587A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE255E027A70EBD00CF587A /* Preview Assets.xcassets in Resources */,
+				3EE255DD27A70EBD00CF587A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,7 +320,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3EE255CD27A70EBC00CF587A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EE255D927A70EBC00CF587A /* SimonApp.swift in Sources */,
+				3EE255D727A70EBC00CF587A /* WatchContentView.swift in Sources */,
+				3EE255EF27A70EFE00CF587A /* ContentView.swift in Sources */,
+				3EE255EE27A70EFE00CF587A /* ButtonModel.swift in Sources */,
+				3EE255ED27A70EFE00CF587A /* SimonGame.swift in Sources */,
+				3EE255F227A7103B00CF587A /* SimonButton.swift in Sources */,
+				3EE255DB27A70EBC00CF587A /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EE255D427A70EBC00CF587A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE255D027A70EBC00CF587A /* SimonWatch WatchKit Extension */;
+			targetProxy = 3EE255D327A70EBC00CF587A /* PBXContainerItemProxy */;
+		};
+		3EE255E327A70EBD00CF587A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EE255C827A70EBB00CF587A /* SimonWatch */;
+			targetProxy = 3EE255E227A70EBD00CF587A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		3EC76DFD279DD91C00982257 /* Debug */ = {
@@ -331,6 +524,120 @@
 			};
 			name = Release;
 		};
+		3EE255E627A70EBD00CF587A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PU4JAM9L7Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SimonWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = SimonWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tomphillipsmusic.Simon;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomphillipsmusic.Simon.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		3EE255E727A70EBD00CF587A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PU4JAM9L7Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = SimonWatch_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = SimonWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.tomphillipsmusic.Simon;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomphillipsmusic.Simon.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		3EE255E927A70EBD00CF587A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimonWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PU4JAM9L7Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SimonWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SimonWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomphillipsmusic.Simon.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		3EE255EA27A70EBD00CF587A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SimonWatch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = PU4JAM9L7Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SimonWatch WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "SimonWatch WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomphillipsmusic.Simon.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -348,6 +655,24 @@
 			buildConfigurations = (
 				3EC76E00279DD91C00982257 /* Debug */,
 				3EC76E01279DD91C00982257 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE255EB27A70EBD00CF587A /* Build configuration list for PBXNativeTarget "SimonWatch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE255E927A70EBD00CF587A /* Debug */,
+				3EE255EA27A70EBD00CF587A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EE255EC27A70EBD00CF587A /* Build configuration list for PBXNativeTarget "SimonWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EE255E627A70EBD00CF587A /* Debug */,
+				3EE255E727A70EBD00CF587A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
