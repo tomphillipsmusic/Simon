@@ -14,6 +14,7 @@ struct SimonButton: View {
         Button(action: {
             guessAction(model)
         }) {
+            
             ZStack {
                 RoundedRectangle(cornerRadius: 10)
                     .foregroundColor(model.color)

@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var game = SimonGame(numberOfStepsInSequence: 4)
+    @ObservedObject var game: SimonGame
     
     let timer = Timer.publish(every: 0.75, on: .main, in: .common).autoconnect()
     
@@ -63,6 +63,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(game: SimonGame(numberOfStepsInSequence: 4))
     }
 }

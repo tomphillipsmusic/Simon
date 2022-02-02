@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct SimonApp: App {
+    @StateObject var game = SimonGame(numberOfStepsInSequence: 4)
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(game: game)
         }
     }
 }

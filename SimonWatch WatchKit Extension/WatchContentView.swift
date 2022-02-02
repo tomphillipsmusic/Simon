@@ -8,13 +8,15 @@
 import SwiftUI
 
 struct WatchContentView: View {
+    @ObservedObject var game: SimonGame
+    
     var body: some View {
-        ContentView()
+        ContentView(game: game)
     }
 }
 
 struct WatchContentView_Previews: PreviewProvider {
     static var previews: some View {
-        WatchContentView()
+        WatchContentView(game: SimonGame(numberOfStepsInSequence: 4))
     }
 }
