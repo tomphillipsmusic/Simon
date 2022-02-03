@@ -20,6 +20,9 @@ struct SimonButton: View {
                     .foregroundColor(model.color)
                     .shadow(radius: 10)
                     .brightness(model.isHighlighted ? 0.3 : 0)
+                
+                Text("⭐️")
+                    .font(.largeTitle)
             }
             
         }
